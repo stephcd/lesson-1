@@ -1,2 +1,3 @@
-#model IEEE/123
-#output profile.png -t profile
+#model get IEEE/123
+#include "123.glm"
+#output "profile.png" -t profile
