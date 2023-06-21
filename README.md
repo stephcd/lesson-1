@@ -32,7 +32,7 @@ The gridlabd simulation is started by the [workflow file](.github/workflows/main
 
 ### Model
 
-The simulation model is defined in the file [`mail.glm`](main.glm).  There are three parts to this file.
+The simulation model is defined in the file [`main.glm`](main.glm).  There are three parts to this file.
 
 1. The [`#ifmissing`](main.glm#L1) macro checks for the existence of the [`123.glm`](https://github.com/arras-energy/gridlabd-models/blob/master/gridlabd-4/IEEE/123.glm) model file. If the file is not found, then the next command [`#model`](main.glm#L2) is used to get a copy of the model from the [GridLAB-D models repository](https://github.com/arras-energy/gridlabd-models).
 
