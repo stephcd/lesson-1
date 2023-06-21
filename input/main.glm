@@ -1,1 +1,2 @@
-#warning This is a template model only. See input/README.md for details.
+#model IEEE/123
+#output profile.png -t profile
