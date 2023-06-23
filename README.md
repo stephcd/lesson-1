@@ -1,22 +1,24 @@
 [![Simulation](https://github.com/dchassin/gridlabd-example-ieee123-voltage-profile/actions/workflows/main.yml/badge.svg)](https://github.com/dchassin/gridlabd-example-ieee123-voltage-profile/actions/workflows/main.yml)
 
-# IEEE-123 Voltage Profile Example
+# Learning Objectives
 
-This example illustrates the following.
+This tutorial illustrates the following.
 
 1. How to setup a GitHub project using GitHub Actions to run a GridLAB-D simulation.
 
 2. How to use caching to avoid repeating steps that are network or compute intensive.
 
-3. How to setup a simulation to run.
+3. How to run a GridLAB-D simulation.
 
 4. How to save artifacts from a simulation so they can be downloaded later.
 
-This example shows how to use GridLAB-D to download and solve the IEEE-123 model and output a plot of the voltage profile that can be downloaded later for viewing.
+You will also learn how to use a GridLAB-D subcommand to download an reference model, use the GridLAB-D powerflow solver to compute the voltage solution for the IEEE-123 model, and use the GridLAB-D output converters to generate a voltage profile PNG image that can be downloaded later for viewing.
 
 To view the output, select [**Actions**](https://github.com/dchassin/gridlabd-example-ieee123-voltage-profile/actions) to show the most recent simulation runs. Select the most recent run completed and download the artifact named `profile.png`.
 
 ## How it works
+
+The goal of this project is to plot IEEE-123 feeder voltage profile.
 
 ### Workflow
 
