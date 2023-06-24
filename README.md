@@ -1,8 +1,8 @@
 [![Simulation](https://github.com/dchassin/gridlabd-example-ieee123-voltage-profile/actions/workflows/main.yml/badge.svg)](https://github.com/dchassin/gridlabd-example-ieee123-voltage-profile/actions/workflows/main.yml)
 
-# Learning Objectives
+# Lesson 1 - Getting Started
 
-This tutorial illustrates the following.
+The learning objectives for this lesson are the following.
 
 1. How to setup a GitHub project using GitHub Actions to run a GridLAB-D simulation.
 
