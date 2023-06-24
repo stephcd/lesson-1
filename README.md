@@ -49,6 +49,12 @@ The simulation model is defined in the file [`main.glm`](main.glm).  There are t
 1. Create a new project using the [new project template](../../../.new_project).
 2. Plot the voltage project of the [IEEE 37 node model](https://github.com/arras-energy/gridlabd-models/blob/master/gridlabd-4/IEEE/37.glm).
 
+# More Information
+
+* [Command line options](https://docs.gridlabd.us/index.html?owner=arras-energy&project=gridlabd&branch=master&folder=/Command&doc=/Command/Help.md)
+* [Output converters](https://docs.gridlabd.us/index.html?owner=arras-energy&project=gridlabd&branch=master&folder=/Converters/Output&doc=/Converters/Output/Png_images.md)
+* [Macros](https://docs.gridlabd.us/_page.html?owner=arras-energy&project=gridlabd&branch=master&folder=/GLM/Macro&doc=/GLM/Macro/Ifmissing.md)
+
 # Next Lesson
 
 * [Lesson 2 - Static Loads](../../../lesson-2)
