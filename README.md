@@ -1,8 +1,8 @@
-[![Simulation](https://github.com/dchassin/gridlabd-example-ieee123-voltage-profile/actions/workflows/main.yml/badge.svg)](https://github.com/dchassin/gridlabd-example-ieee123-voltage-profile/actions/workflows/main.yml)
+[![Simulation](../../actions/workflows/main.yml/badge.svg)](../../actions/workflows/main.yml)
 
 # Lesson 1 - Getting Started
 
-The learning objectives for this lesson are the following.
+The goal of this lesson is familiarize you with how to setup and run GridLAB-D projects on GitHub. The specific learning objectives for this lesson are the following.
 
 1. How to setup a GitHub project using GitHub Actions to run a GridLAB-D simulation.
 
@@ -12,13 +12,15 @@ The learning objectives for this lesson are the following.
 
 4. How to save artifacts from a simulation so they can be downloaded later.
 
+## Running GridLAB-D using GitHub Actions
+
 You will also learn how to use a GridLAB-D subcommand to download an reference model, use the GridLAB-D powerflow solver to compute the voltage solution for the IEEE-123 model, and use the GridLAB-D output converters to generate a voltage profile PNG image that can be downloaded later for viewing.
 
-To view the output, select [**Actions**](https://github.com/dchassin/gridlabd-example-ieee123-voltage-profile/actions) to show the most recent simulation runs. Select the most recent run completed and download the artifact named `profile.png`.
+To view the output, select [**Actions**](../../actions) to show the most recent simulation runs. Select the most recent run completed, download, and view the PNG image artifact named **`IEEE 123 Voltage Profile`**.
 
-## How it works
+## Model Purpose
 
-The goal of this project is to plot IEEE-123 feeder voltage profile.
+The purpose of this model is to plot IEEE-123 feeder voltage profile.
 
 ### Workflow
 
@@ -30,7 +32,7 @@ The gridlabd simulation is started by the [workflow file](.github/workflows/main
 
 3. The [`run`](.github/workflows/main.yml#L28) step run the model files itself, the details of which are discussed below.
 
-4. The [`save`](.github/workflows/main.yml#L31) step makes the specified files available for download as artifacts from the [**Actions**](https://github.com/dchassin/gridlabd-example-ieee123-voltage-profile/actions) tab after the simulation is complete.
+4. The [`save`](.github/workflows/main.yml#L31) step makes the specified files available for download as artifacts from the [**Actions**](../../actions) tab after the simulation is complete.
 
 ### Model
 
@@ -42,3 +44,7 @@ The simulation model is defined in the file [`main.glm`](main.glm).  There are t
 
 3. The [`#output`](main.glm#L5) macro is used to generate the voltage profile PNG image.  The file generated is used to provide the artifact saved by the [`save`](.github/workflows/main.yml#L31) step in the [workflow file](.github/workflows/main.yml).
 
+# Exercises
+
+1. Create a new project using the [new project template](../../../.new_project).
+2. Plot the voltage project of the [IEEE 37 node model](https://github.com/arras-energy/gridlabd-models/blob/master/gridlabd-4/IEEE/37.glm).
